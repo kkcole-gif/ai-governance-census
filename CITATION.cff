@@ -10,8 +10,6 @@ authors:
     affiliation: "North Carolina State University"
     email: "kkcole2@ncsu.edu"
 license: CC-BY-4.0
-url: "https://github.com/kkcole-gif/ai-governance-census"
-repository-code: "https://github.com/kkcole-gif/ai-governance-census"
 abstract: "A stratified census of the documents through which US colleges and universities govern artificial intelligence, drawn from the 2025 Carnegie Classifications (334 institutions, seed 20261023)."
 keywords:
   - artificial intelligence
