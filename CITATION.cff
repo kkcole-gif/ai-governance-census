@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "AI Governance Census of US Colleges and Universities"
+type: dataset
+authors:
+  - family-names: Cole
+    given-names: Kirsti
+    affiliation: "North Carolina State University"
+license: CC-BY-4.0
+repository-code: "https://github.com/kkcole-gif/ai-governance-census"
+abstract: "A stratified census of the documents through which US colleges and universities govern artificial intelligence, drawn from the 2025 Carnegie Classifications (334 institutions, seed 20261023)."
+keywords:
+  - artificial intelligence
+  - higher education
+  - institutional policy
+  - AI governance
+  - Carnegie Classifications
