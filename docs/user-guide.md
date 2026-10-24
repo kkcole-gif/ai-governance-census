@@ -1,6 +1,6 @@
 # User Guide: AI Governance Census of US Colleges and Universities
 
-Draft, October 24, 2026. Kirsti Cole (North Carolina State University) directs the census and verifies every document before it enters reported figures. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
+Draft, October 24, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
 
 ## 1. What the census records
 
@@ -25,7 +25,7 @@ Every row carries one status. Only rows marked Verified enter reported figures.
 
 | Status | Meaning |
 | --- | --- |
-| Verified | Kirsti Cole has opened the document and confirmed its title, issuing office, date, and quoted passage against the source. |
+| Verified | Title, issuing office, date, and quoted passage confirmed against the source document. |
 | Found | A searcher located and read the document. It awaits verification. |
 | Flag | A searcher located the document, but one of the four tests or a field value is in doubt. The Notes field states the doubt. |
 | Located behind login | The document exists, but reading it requires institutional credentials. |
