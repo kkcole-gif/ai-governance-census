@@ -1,6 +1,6 @@
 # User Guide: AI Governance Census of US Colleges and Universities
 
-Draft, October 24, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
+Revised November 2, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
 
 ## 1. What the census records
 
@@ -26,8 +26,8 @@ Every row carries one status. Only rows marked Verified enter reported figures.
 | Status | Meaning |
 | --- | --- |
 | Verified | Title, issuing office, date, and quoted passage confirmed against the source document. |
-| Found | A searcher located and read the document. It awaits verification. |
-| Flag | A searcher located the document, but one of the four tests or a field value is in doubt. The Notes field states the doubt. |
+| Found | The document was located and read. It awaits verification. |
+| Flag | The document was located, but one of the four tests or a field value is in doubt. The Notes field states the doubt. |
 | Located behind login | The document exists, but reading it requires institutional credentials. |
 | Not reachable | The document exists, but the site blocked reading it. |
 | Dead link on recheck | The document was verified once and was unreachable on a later check. The quoted passage and coding stand as recorded. |
@@ -54,34 +54,37 @@ The institution log records, for every drawn institution, the search date, the r
 
 | Field | What it records |
 | --- | --- |
+| Batch | The release group holding the row: Pilot, R1 batch 1, R1 batch 2, and so on. R1 batches follow the alphabetical order of the R1 list. |
 | UNITID | IPEDS identifier from the Carnegie file |
 | Institution | Carnegie name of the institution |
-| Stratum | Sampling stratum (1 R1 census through 8 existing corpus) |
-| Document title | Title as the document gives it, with a descriptive title in parentheses where none is given |
-| Issuing office | The issuing office, from a controlled list, with Other (named) for anything outside it |
+| Stratum | Sampling stratum (1 R1 census through 8 existing corpus), as listed in the README |
+| Control | Public or private nonprofit, from the Carnegie file |
+| Research designation | R1, R2, or None, from the Carnegie file |
+| State | State, District of Columbia, or Puerto Rico |
+| Document title | Title as the document gives it. Where the document gives none, a descriptive title appears in parentheses. |
+| Issuing office | The office named in the document as its author, from a controlled list, with Other (named) for an office outside the list. The hosting web domain never decides this field. |
 | Document type | One of twelve types, from 1 Executive communication to 12 Strategic initiative |
-| Boundary case | Yes where the document sits at the edge of a test, with the reason in Notes |
+| Boundary case | Yes where the document sits at the edge of one of the four tests in section 2, with the reason in Notes. A few cells state the reason in place of Yes. |
 | Standalone or embedded | See section 2 |
-| Date issued | Earliest date the document carries |
-| Date basis | How the date was established: stated, file path, page metadata, inferred, or undated |
-| Date last revised | Latest revision date, where one is given |
-| Wave | Wave 1 (issued spring to fall 2023), Wave 2 (issued or revised 2024 onward), Both, or Undetermined |
-| Post-July-2026 | Yes where issued or revised after July 2026 |
-| AI term used | The terms the document uses for AI |
-| Contradiction with another document | Any conflict between this document and another at the same institution, named specifically |
-| URL | Address at retrieval |
-| Format | HTML, PDF, DOCX, and so on |
+| Date issued | The earliest date the document carries, written as year, year and month, or full date. Undated where the document carries no date. |
+| Date basis | The source of Date issued. Stated means printed in the document. File path means a year or month in the web address or file name. Page metadata means the last-modified date of the web page. Inferred means reasoned from the content, with the reasoning in Notes. Undated means no source exists. A parenthesis adds detail, as in stated (effective). |
+| Date last revised | The most recent revision or update date the document states. A blank cell means the document states no revision date. Not recorded means the field was left unfilled during the search and remains open. A few cells give a scheduled review date or a handbook edition, as worded. |
+| Wave | Wave 1 for a document issued between spring and fall 2023, Wave 2 for a document issued or revised from 2024 onward, Both for a 2023 document revised later, and Undetermined where the dates do not settle the question |
+| Post-July-2026 | Yes where the document was issued or revised after 31 July 2026, No where its dates fall earlier, blank where its dates do not settle the question. A parenthesis gives the basis where it differs from Date basis. |
+| AI term used | The terms the document itself uses for AI (generative AI, artificial intelligence, a named product), recorded as written |
+| Contradiction with another document | A conflict between this document and another at the same institution, with the other document named and the conflict stated |
+| URL | Address of the document at retrieval |
+| Format | HTML, PDF, DOCX, PPTX, Google Doc, and so on |
 | Language | Language of the document |
-| Key Framing Language | One sentence quoted from the document |
-| Quote source | How the quotation was obtained; "Fetch (verify)" marks a quotation not yet checked against the source |
+| Key Framing Language | One sentence quoted word for word from the document, chosen as the sentence stating its governing position, in double quotation marks. An ellipsis marks omitted words. Where the row holds no quotation, the cell gives the reason. Not applicable (no text) marks an announced body or policy without a published document. Not applicable (not read) marks a document behind a login or blocked from reading. Not recorded (no quotation taken) marks a document read without a sentence quoted. |
+| Quote source | How the quoted sentence was checked against its source, with the date of the check. Browser text, verified means matched against the live page in a web browser. PDF, Word, or slide text extracted in browser means matched against text drawn from the file. Page text from a manual download means matched against a copy saved by hand where automated reading was blocked. Captured and verified means the row held no quotation, so one was taken from the page at verification. Original quotation superseded means the sentence first recorded was replaced by a sentence confirmed in the source, and Notes keeps the earlier wording. Fetch (verify) means the quotation was taken by automated page fetch and has not yet been checked. A blank cell means the row holds no quotation. |
 | Named frameworks | Frameworks, laws, or standards the document cites |
 | Vendor named | AI products or vendors the document names |
-| Retrieval date | Date the document was read |
+| Retrieval date | Date the document was first read. The date of verification appears in Quote source. |
 | Status | See section 3 |
-| Found by | The search step locating it |
-| Policy stance (open) | A short description of what the document permits, requires, or prohibits |
-| Notes | Anything a reader needs to interpret the row |
-| Batch | The search batch producing the row |
+| Found by | The step of the search procedure locating the document. Step 2 is a web search with one of seven strings: 1 or a, generative AI policy. 2 or b, artificial intelligence guidance faculty. 3 or c, ChatGPT academic integrity. 4 or d, AI syllabus statement. 5 or e, acceptable use artificial intelligence. 6 or f, vendor license terms (ChatGPT Edu, Copilot, Gemini, Claude). g, the institution name with AI policy, unrestricted by domain. The pilot and R1 batch 1 number the strings and later batches letter them, with the same number and letter naming the same search. Step 3 names the office page fetched. Step 4 marks a search of a system office. Follow-up, Manual recheck, and similar entries mark a document added after the batch search, and Notes give the route. |
+| Policy stance (open) | A one-line description, written for the census, of what the document permits, requires, prohibits, or delegates. It paraphrases the document and carries no interpretive coding, which runs as a separate pass. |
+| Notes | Section locators for embedded clauses, the reason for a Flag or a boundary case, the basis of an inferred date, translation choices, and the verification history. A vertical bar separates entries, which run in the order written. |
 
 The Contradiction field deserves particular attention. Universities often state different default rules for AI use across their own documents (a provost policy permitting use by default while a school catalog prohibits it, for example). The census records each such conflict at the row level so the conflicts are countable.
 
