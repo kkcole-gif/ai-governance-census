@@ -2,14 +2,14 @@
 
 A stratified census of the documents through which US colleges and universities govern artificial intelligence: policies, honor code clauses, syllabus requirements, teaching and student guidance, IT and data rules, procurement and licensing announcements, committee reports, and strategic initiatives. The sample of 334 institutions is drawn from the 2025 Carnegie Classifications.
 
-Status: version 0.2 (2 November 2026) releases the verified inventory for 30 institutions, the ten pilot institutions and the first twenty R1 institutions in alphabetical order (356 document rows, 299 verified and 13 announced without a document against the live document or a downloaded copy). The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
+Status: version 0.3 (2 November 2026) releases the inventory for 50 institutions, the ten pilot institutions and the first forty R1 institutions in alphabetical order (645 document rows). Of these, 452 rows were verified against the live document or a downloaded copy, 50 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
 
 ## Contents
 
 | Path | What it holds |
 | --- | --- |
 | `data/sample_drawn_institutions.csv` | The 334 drawn institutions, with stratum, draw rule, UNITID, and Carnegie attributes |
-| `data/inventory.csv` | One row per document for every institution searched so far, all fields of the per-document record, with a Batch column (Pilot, R1 batch 1) |
+| `data/inventory.csv` | One row per document for every institution searched so far, all fields of the per-document record, with a Batch column (Pilot, R1 batch 1, R1 batch 2) |
 | `data/institution_log.csv` | One row per institution searched: search date, result, document count, recorded absences |
 | `data/pilot_inventory.csv`, `data/pilot_institution_log.csv` | The October 2026 pilot subset, kept as released |
 | `data/pilot_protocol_findings.csv` | Changes to the protocol the pilot produced, with their status |
