@@ -12,6 +12,9 @@ identifiers:
   - type: url
     value: https://github.com/kkcole-gif/ai-governance-census/releases/tag/v0.2
     description: "GitHub release v0.2"
+  - type: doi
+    value: 10.5281/zenodo.23887259
+    description: "Concept DOI, all versions"
 authors:
   - family-names: Cole
     given-names: Kirsti

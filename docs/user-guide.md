@@ -96,7 +96,7 @@ A document addressed to the person who decides, with stated grounds, is eligible
 
 ## 7. How to cite
 
-Cite the version you used through its Zenodo DOI, which appears on the repository page once version 1.0 is released. Each release receives its own DOI. A concept DOI always resolves to the latest version. The CITATION.cff file gives the current citation in machine-readable form.
+Cite the version you used through its Zenodo DOI. Each release receives its own DOI, and the concept DOI 10.5281/zenodo.23887259 always resolves to the latest version. The CITATION.cff file gives the current citation in machine-readable form.
 
 The CC BY 4.0 license covers the compilation, coding, and documentation. Quoted passages remain the work of their issuing institutions and appear in short excerpt for research and criticism.
 

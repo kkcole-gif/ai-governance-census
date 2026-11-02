@@ -46,7 +46,7 @@ The Carnegie Public Data File is published by the American Council on Education 
 
 ## Citation
 
-Cite the archived release through its Zenodo DOI. Version 0.2: https://doi.org/10.5281/zenodo.23887260. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
+Cite the archived release through its Zenodo DOI. The concept DOI https://doi.org/10.5281/zenodo.23887259 always resolves to the latest version; version 0.2 is https://doi.org/10.5281/zenodo.23887260. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
 
 ## License
 
