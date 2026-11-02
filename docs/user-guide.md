@@ -34,6 +34,7 @@ Every row carries one status. Only rows marked Verified enter reported figures.
 | Excluded (news) | A news item with no quoted institutional language. It stays visible and never enters counts. |
 | Announced, no document | A body, policy, or guidance an institution announces or refers to without a public text: a committee named without a charge or report, a policy described as in development or forthcoming, norms promised and not published. Recorded as its own row so deferral is countable. It never enters document counts. |
 | Excluded (presentation; fails governance test) | A document read in full and found to state no rule, kept for provenance. It never enters counts. |
+| Excluded (merged into another row) | A document the institution has withdrawn or replaced, whose content is carried by the row its Notes name. It never enters counts and stays for provenance. |
 
 Unverified rows stay in the data so a reader sees what has been searched and what remains open.
 

@@ -2,7 +2,7 @@
 
 A stratified census of the documents through which US colleges and universities govern artificial intelligence: policies, honor code clauses, syllabus requirements, teaching and student guidance, IT and data rules, procurement and licensing announcements, committee reports, and strategic initiatives. The sample of 334 institutions is drawn from the 2025 Carnegie Classifications.
 
-Status: version 0.3 (2 November 2026) releases the inventory for 50 institutions, the ten pilot institutions and the first forty R1 institutions in alphabetical order (647 document rows). Of these, 466 rows were verified against the live document or a downloaded copy, 50 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
+Status: version 0.3 (2 November 2026) releases the inventory for 50 institutions, the ten pilot institutions and the first forty R1 institutions in alphabetical order (648 document rows). Of these, 467 rows were verified against the live document or a downloaded copy, 50 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
 
 ## Contents
 
