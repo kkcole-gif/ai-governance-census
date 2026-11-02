@@ -2,16 +2,16 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below, using the Zenodo DOI of the version you used."
 title: "AI Governance Census of US Colleges and Universities"
 type: dataset
-version: "0.2"
+version: "0.3"
 date-released: "2026-11-02"
-doi: 10.5281/zenodo.23887260
+doi: 10.5281/zenodo.23893601
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23887260
-    description: "Version 0.2, Zenodo"
+    value: 10.5281/zenodo.23893601
+    description: "Version 0.3, Zenodo"
   - type: url
-    value: https://github.com/kkcole-gif/ai-governance-census/releases/tag/v0.2
-    description: "GitHub release v0.2"
+    value: https://github.com/kkcole-gif/ai-governance-census/releases/tag/v0.3
+    description: "GitHub release v0.3"
   - type: doi
     value: 10.5281/zenodo.23887259
     description: "Concept DOI, all versions"
