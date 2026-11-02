@@ -90,12 +90,12 @@ main{padding:22px 0 60px}
  <section id="cite" hidden>
   <div class="prose">
    <h2>Cite</h2>
-   <div class="cite" id="citeText">Cole, K. (2026). AI Governance Census of US Colleges and Universities (Version 0.1-pilot) [Data set]. Zenodo. DOI assigned at version 1.0.</div>
+   <div class="cite" id="citeText">Cole, K. (2026). AI Governance Census of US Colleges and Universities (Version 0.2) [Data set]. Zenodo. DOI pending for this version.</div>
    <button class="btn" id="copy">Copy citation</button>
    <p class="note">Each release receives its own DOI on Zenodo. Cite the version you used.</p>
    <h2>Download</h2>
-   <a class="btn" href="data/pilot_inventory.csv" download>Document inventory (CSV)</a>
-   <a class="btn" href="data/pilot_institution_log.csv" download>Institution log (CSV)</a>
+   <a class="btn" href="data/inventory.csv" download>Document inventory (CSV)</a>
+   <a class="btn" href="data/institution_log.csv" download>Institution log (CSV)</a>
    <a class="btn" href="data/sample_drawn_institutions.csv" download>Drawn institutions (CSV)</a>
    <h2>License</h2>
    <p>The compilation, coding, and documentation are released under CC BY 4.0. Quoted passages remain the work of their issuing institutions and appear in short excerpt for research and criticism.</p>
@@ -137,7 +137,7 @@ function render(){
  $('contraList').innerHTML=cs.map(d=>docHTML(d,true)).join('')||'<p class="note">No contradictions recorded.</p>';
 }
 (async()=>{
- [DOCS,LOG]=await Promise.all([load('data/pilot_inventory.csv'),load('data/pilot_institution_log.csv')]);
+ [DOCS,LOG]=await Promise.all([load('data/inventory.csv'),load('data/institution_log.csv')]);
  fill($('fStratum'),LOG.map(l=>l.Stratum));fill($('fType'),DOCS.map(d=>d['Document type']));fill($('fOffice'),DOCS.map(d=>d['Issuing office']));
  ['q','fStratum','fType','fOffice','fSE','fStatus'].forEach(i=>$(i).addEventListener('input',render));
  render();

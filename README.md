@@ -2,15 +2,16 @@
 
 A stratified census of the documents through which US colleges and universities govern artificial intelligence: policies, honor code clauses, syllabus requirements, teaching and student guidance, IT and data rules, procurement and licensing announcements, committee reports, and strategic initiatives. The sample of 334 institutions is drawn from the 2025 Carnegie Classifications.
 
-Status: pilot complete and verified (10 institutions, 49 documents, October 2026). The full census is in progress. Version 1.0 will release the verified inventory together with specification-scale scores from the coding pass.
+Status: version 0.2 (2 November 2026) releases the verified inventory for 30 institutions, the ten pilot institutions and the first twenty R1 institutions in alphabetical order (343 document rows, 299 verified against the live document or a downloaded copy). The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
 
 ## Contents
 
 | Path | What it holds |
 | --- | --- |
 | `data/sample_drawn_institutions.csv` | The 334 drawn institutions, with stratum, draw rule, UNITID, and Carnegie attributes |
-| `data/pilot_inventory.csv` | One row per document for the ten pilot institutions, all fields of the per-document record |
-| `data/pilot_institution_log.csv` | One row per pilot institution: search date, result, document count, recorded absences |
+| `data/inventory.csv` | One row per document for every institution searched so far, all fields of the per-document record, with a Batch column (Pilot, R1 batch 1) |
+| `data/institution_log.csv` | One row per institution searched: search date, result, document count, recorded absences |
+| `data/pilot_inventory.csv`, `data/pilot_institution_log.csv` | The October 2026 pilot subset, kept as released |
 | `data/pilot_protocol_findings.csv` | Changes to the protocol the pilot produced, with their status |
 | `scripts/build_frame.py` | Builds the sampling frame and reproduces every random draw from the 2025 Carnegie Public Data File |
 | `docs/` | Protocol and codebook (in preparation) |
@@ -45,7 +46,7 @@ The Carnegie Public Data File is published by the American Council on Education 
 
 ## Citation
 
-Cite the archived release through its Zenodo DOI, which appears on this page once version 1.0 is tagged. The `CITATION.cff` file gives the current citation.
+Cite the archived release through its Zenodo DOI, which appears in `CITATION.cff` and on the site's Cite tab for each tagged version. The `CITATION.cff` file gives the current citation.
 
 ## License
 

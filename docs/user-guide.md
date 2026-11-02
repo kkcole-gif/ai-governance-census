@@ -30,8 +30,9 @@ Every row carries one status. Only rows marked Verified enter reported figures.
 | Flag | A searcher located the document, but one of the four tests or a field value is in doubt. The Notes field states the doubt. |
 | Located behind login | The document exists, but reading it requires institutional credentials. |
 | Not reachable | The document exists, but the site blocked reading it. |
-| Dead link on recheck | The document was verified once and was unreachable on a later check. |
+| Dead link on recheck | The document was verified once and was unreachable on a later check. The quoted passage and coding stand as recorded. |
 | Excluded (news) | A news item with no quoted institutional language. It stays visible and never enters counts. |
+| Excluded (presentation; fails governance test) | A document read in full and found to state no rule, kept for provenance. It never enters counts. |
 
 Unverified rows stay in the data so a reader sees what has been searched and what remains open.
 
