@@ -17,3 +17,7 @@ Only rows marked Verified enter the counts on this site. Rows with other statuse
 ### Where to go next
 
 The Institutions tab lists every searched institution with its documents. The Contradictions tab gathers every recorded conflict in one list. Using the data walks through common questions and the cautions each one carries. Reading the census presents the director's interpretation of the evidence, kept separate from the record itself. Cite and download gives the citation, the data files, and the license.
+
+### Method and authorship
+
+Kirsti K. Cole, North Carolina State University, directs the census, which supplies the quantitative base for her book in progress, The Glitch Curriculum, under review with Johns Hopkins University Press. She designed the sampling frame, the four inclusion tests, and the search protocol, and she rules on boundary cases. The fixed search sequence is run with Claude, an AI model from Anthropic, through web search and page fetch, so every institution receives the same sequence and an absence reflects the procedure as run. Each quoted sentence is matched against the source document in a web browser before a row is marked Verified, and documents blocked to the browser are checked against copies downloaded by hand. The interpretive coding and the readings on the Reading the census tab are hers, kept separate from the record. Corrections and missing documents go through the reporting form described in section 8 of the [user guide](#guide).
