@@ -32,6 +32,7 @@ Every row carries one status. Only rows marked Verified enter reported figures.
 | Not reachable | The document exists, but the site blocked reading it. |
 | Dead link on recheck | The document was verified once and was unreachable on a later check. The quoted passage and coding stand as recorded. |
 | Excluded (news) | A news item with no quoted institutional language. It stays visible and never enters counts. |
+| Announced, no document | A body, policy, or guidance an institution announces or refers to without a public text: a committee named without a charge or report, a policy described as in development or forthcoming, norms promised and not published. Recorded as its own row so deferral is countable. It never enters document counts. |
 | Excluded (presentation; fails governance test) | A document read in full and found to state no rule, kept for provenance. It never enters counts. |
 
 Unverified rows stay in the data so a reader sees what has been searched and what remains open.
