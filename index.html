@@ -5,27 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Governance Census</title>
 <meta name="description" content="A stratified census of the documents through which US colleges and universities govern artificial intelligence.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <style>
-:root{--bg:#ffffff;--fg:#41292B;--muted:#5A4446;--line:#D5E2DC;--soft:#F3F7F5;--accent:#35605F;--accent-soft:#E6EFEB;--warn:#891A17;--warn-soft:#F8ECE9;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,monospace}
+:root{--bg:#ffffff;--fg:#41292B;--muted:#5A4446;--line:#D5E2DC;--soft:#F3F7F5;--accent:#35605F;--accent-soft:#E6EFEB;--warn:#891A17;--warn-soft:#F8ECE9;--sans:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"Libre Caslon Text",Georgia,serif;--mono:var(--sans)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1E1A21;--fg:#FCF7E9;--muted:#C9BFB4;--line:#3A343F;--soft:#26212A;--accent:#8FC1B9;--accent-soft:#22302E;--warn:#F0A79A;--warn-soft:#33221F}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:var(--accent)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
 header{border-top:4px solid var(--accent);border-bottom:1px solid var(--line);padding:28px 0 20px}
-h1{font-size:1.7rem;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
+h1{font-family:var(--serif);font-size:1.85rem;line-height:1.2;margin:0 0 8px;font-weight:700}
+h2,h3,h4,.card>summary h3,.doc h4{font-family:var(--serif)}
 .lede{color:var(--muted);margin:0;max-width:760px}
 nav{display:flex;gap:4px;flex-wrap:wrap;margin-top:18px}
-nav button{border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:7px 14px;border-radius:4px;font:500 .72rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+nav button{border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:7px 14px;border-radius:4px;font:500 .85rem/1.4 var(--sans);cursor:pointer}
 nav button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
 main{padding:22px 0 60px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:20px}
 .stat{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:4px;padding:12px 14px;background:var(--soft)}
-.stat b{display:block;font-size:1.5rem;font-weight:650}
-.stat span{color:var(--muted);font:.72rem/1.4 var(--mono);letter-spacing:.05em;text-transform:uppercase}
+.stat b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:700}
+.stat span{color:var(--muted);font:.82rem/1.4 var(--sans)}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
 .filters select,.filters input{font:inherit;font-size:.9rem;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);max-width:100%}
 .filters input{flex:1 1 220px}
