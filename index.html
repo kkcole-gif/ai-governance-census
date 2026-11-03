@@ -5,26 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Governance Census</title>
 <meta name="description" content="A stratified census of the documents through which US colleges and universities govern artificial intelligence.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <style>
-:root{--bg:#ffffff;--fg:#1d2330;--muted:#5b6474;--line:#e3e6eb;--soft:#f5f6f8;--accent:#1f4e79;--accent-soft:#e8eff6;--warn:#8a4b08;--warn-soft:#fbf1e4}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14171c;--fg:#e8eaee;--muted:#a3abb8;--line:#2c323b;--soft:#1c2027;--accent:#8fb8de;--accent-soft:#1f2b38;--warn:#e4b072;--warn-soft:#2e2418}}
+:root{--bg:#ffffff;--fg:#41292B;--muted:#5A4446;--line:#D5E2DC;--soft:#F3F7F5;--accent:#35605F;--accent-soft:#E6EFEB;--warn:#891A17;--warn-soft:#F8ECE9;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1E1A21;--fg:#FCF7E9;--muted:#C9BFB4;--line:#3A343F;--soft:#26212A;--accent:#8FC1B9;--accent-soft:#22302E;--warn:#F0A79A;--warn-soft:#33221F}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:var(--accent)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-header{border-bottom:1px solid var(--line);padding:28px 0 20px}
-h1{font-size:1.6rem;margin:0 0 6px;font-weight:650}
+header{border-top:4px solid var(--accent);border-bottom:1px solid var(--line);padding:28px 0 20px}
+h1{font-size:1.7rem;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
 .lede{color:var(--muted);margin:0;max-width:760px}
 nav{display:flex;gap:4px;flex-wrap:wrap;margin-top:18px}
-nav button{border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:7px 14px;border-radius:6px;font:inherit;font-size:.92rem;cursor:pointer}
+nav button{border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:7px 14px;border-radius:4px;font:500 .72rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
 nav button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
 main{padding:22px 0 60px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:20px}
-.stat{border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.stat{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:4px;padding:12px 14px;background:var(--soft)}
 .stat b{display:block;font-size:1.5rem;font-weight:650}
-.stat span{color:var(--muted);font-size:.85rem}
+.stat span{color:var(--muted);font:.72rem/1.4 var(--mono);letter-spacing:.05em;text-transform:uppercase}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
 .filters select,.filters input{font:inherit;font-size:.9rem;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);max-width:100%}
 .filters input{flex:1 1 220px}
@@ -33,7 +34,7 @@ main{padding:22px 0 60px}
 .card>summary::-webkit-details-marker{display:none}
 .card>summary h3{margin:0;font-size:1.02rem;font-weight:600;flex:1 1 260px}
 .meta{color:var(--muted);font-size:.85rem}
-.pill{display:inline-block;font-size:.75rem;padding:1px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);margin-right:4px}
+.pill{display:inline-block;font-family:var(--mono);font-size:.72rem;padding:1px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);margin-right:4px}
 .pill.v{background:var(--accent-soft);color:var(--accent);border-color:transparent}
 .pill.w{background:var(--warn-soft);color:var(--warn);border-color:transparent}
 .docs{border-top:1px solid var(--line);padding:4px 14px 12px}
@@ -52,6 +53,7 @@ main{padding:22px 0 60px}
 .summary{margin:10px 0 4px;font-size:.95rem;max-width:760px}
 .record{margin-top:10px}
 .record summary{cursor:pointer;color:var(--accent);font-size:.85rem}
+main.wrap{padding-top:24px;padding-bottom:60px}
 [hidden]{display:none!important}
 </style>
 </head>
