@@ -50,6 +50,8 @@ Institutions governed only by a system-office document (a state system policy wi
 
 The institution log records, for every drawn institution, the search date, the result (Documents found, No AI governance document located, Announced with no document, or Located but not retrievable), and the absences checked. An institution with no qualifying document stays in the data with its log entry.
 
+Each institution in the log also carries a heading line (the Profile field) and a summary (the Summary field), written for readers outside the field. The heading line lists, from the coded fields, the highest-order governing document, the status of the integrity code, the vendors the documents name, and the number of contradictions. In three to five sentences, the summary states what governs AI at the institution and which office issues it, whether the integrity code names AI, any contradiction, any body announced without a document, and what was not read. The full search record, which lists the pages searched, read, set aside, and not reached, appears behind the Full search record toggle on the Institutions tab and in the Absences and access notes field of the log.
+
 ## 5. Fields in the inventory
 
 | Field | What it records |
@@ -86,7 +88,7 @@ The institution log records, for every drawn institution, the search date, the r
 | Policy stance (open) | A one-line description, written for the census, of what the document permits, requires, prohibits, or delegates. It paraphrases the document and carries no interpretive coding, which runs as a separate pass. |
 | Notes | Section locators for embedded clauses, the reason for a Flag or a boundary case, the basis of an inferred date, translation choices, and the verification history. A vertical bar separates entries, which run in the order written. |
 
-The Contradiction field deserves particular attention. Universities often state different default rules for AI use across their own documents (a provost policy permitting use by default while a school catalog prohibits it, for example). The census records each such conflict at the row level so the conflicts are countable.
+The Contradiction field deserves particular attention. Universities often state different default rules for AI use across their own documents (a provost policy permitting use by default while a school catalog prohibits it, for example). The census records each such conflict at the row level so the conflicts are countable. Each contradiction line names the other document and states what each says. Where one document replaces or updates another at the same campus, the census records a version note in the full search record and counts no contradiction.
 
 ## 6. The specification scale
 

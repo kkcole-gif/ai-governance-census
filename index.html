@@ -126,8 +126,8 @@ function docHTML(d,showInst){
  const c=EMPTY.test((d['Contradiction with another document']||'').trim())?'':`<div class="c">Contradiction: ${esc(d["Contradiction with another document"].replace(/^Y( \([^)]*\))?:\s*/,""))}</div>`;
  const q=d['Key Framing Language']&&!/^not captured$/i.test(d['Key Framing Language'])?`<blockquote>${esc(d['Key Framing Language'])}</blockquote>`:'';
  return `<div class="doc"><h4>${showInst?esc(d.Institution)+': ':''}<a href="${esc(d.URL)}" target="_blank" rel="noopener">${esc(d['Document title'])}</a></h4>
- <div class="meta">${statusPill(d.Status)}<span class="pill">${esc(d['Document type'])}</span><span class="pill">${esc(d['Standalone or embedded'])}</span> ${esc(d['Issuing office'])}${d['Date issued']?' · issued '+esc(d['Date issued']):''}${d['Date last revised']&&!EMPTY.test(d['Date last revised'])?' · revised '+esc(d['Date last revised']):''}</div>
- ${q}${d['Policy stance (open)']?`<div class="meta">${esc(d['Policy stance (open)'])}</div>`:''}${c}</div>`}
+ <div class="meta">${statusPill(d.Status)}<span class="pill">${esc(d['Document type'])}</span><span class="pill">${esc(d['Standalone or embedded'])}</span> ${esc(d['Issuing office'])}${d['Date issued']&&!/^undated$/i.test(d['Date issued'])?' · issued '+esc(d['Date issued']):''}${d['Date last revised']&&!EMPTY.test(d['Date last revised'])?' · revised '+esc(d['Date last revised']):''}</div>
+ ${q}${d['Policy stance (open)']&&!/^(not read|unknown|not applicable|not determin|not recorded|advisory$)/i.test(d['Policy stance (open)'].trim())?`<div class="meta">${esc(d['Policy stance (open)'])}</div>`:''}${c}</div>`}
 function render(){
  const q=$('q').value.toLowerCase(),fS=$('fStratum').value,fT=$('fType').value,fO=$('fOffice').value,fE=$('fSE').value,fV=$('fStatus').value;
  const docs=DOCS.filter(d=>(!fS||d.Stratum===fS)&&(!fT||d['Document type']===fT)&&(!fO||d['Issuing office']===fO)&&(!fE||d['Standalone or embedded']===fE)&&(!fV||d.Status===fV)&&(!q||(d.Institution+' '+d['Document title']+' '+d['Key Framing Language']).toLowerCase().includes(q)));
