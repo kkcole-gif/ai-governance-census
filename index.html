@@ -29,9 +29,9 @@ main{padding:22px 0 60px}
 .filters select,.filters input{font:inherit;font-size:.9rem;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);max-width:100%}
 .filters input{flex:1 1 220px}
 .card{border:1px solid var(--line);border-radius:8px;margin-bottom:10px}
-.card summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
-.card summary::-webkit-details-marker{display:none}
-.card summary h3{margin:0;font-size:1.02rem;font-weight:600;flex:1 1 260px}
+.card>summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.card>summary::-webkit-details-marker{display:none}
+.card>summary h3{margin:0;font-size:1.02rem;font-weight:600;flex:1 1 260px}
 .meta{color:var(--muted);font-size:.85rem}
 .pill{display:inline-block;font-size:.75rem;padding:1px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);margin-right:4px}
 .pill.v{background:var(--accent-soft);color:var(--accent);border-color:transparent}
@@ -48,6 +48,10 @@ main{padding:22px 0 60px}
 .cite{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:14px;font-size:.95rem}
 .btn{border:1px solid var(--accent);background:var(--bg);color:var(--accent);padding:6px 12px;border-radius:6px;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none;display:inline-block;margin:8px 8px 0 0}
 .note{color:var(--muted);font-size:.85rem}
+.profile{flex-basis:100%;font-size:.88rem;color:var(--fg)}
+.summary{margin:10px 0 4px;font-size:.95rem;max-width:760px}
+.record{margin-top:10px}
+.record summary{cursor:pointer;color:var(--accent);font-size:.85rem}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -132,7 +136,7 @@ function render(){
  const ver=DOCS.filter(d=>d.Status==='Verified');const vb={};ver.forEach(d=>(vb[uid(d.UNITID)]=vb[uid(d.UNITID)]||[]).push(d));
  const any=Object.keys(vb).length,sa=Object.values(vb).filter(a=>a.some(d=>d['Standalone or embedded']==='Standalone')).length,fp=Object.values(vb).filter(a=>a.some(d=>/^3 /.test(d['Document type']))).length;
  $('stats').innerHTML=`<div class="stat"><b>${LOG.length}</b><span>institutions searched</span></div><div class="stat"><b>${ver.length}</b><span>verified documents</span></div><div class="stat"><b>${any}</b><span>institutions with any qualifying document</span></div><div class="stat"><b>${sa}</b><span>with a standalone document</span></div><div class="stat"><b>${fp}</b><span>with a formal policy naming AI (campus or system)</span></div>`;
- $('list').innerHTML=insts.map(l=>{const ds=by[uid(l.UNITID)]||[];return `<details class="card"><summary><h3>${esc(l.Institution)}</h3><span class="meta">${esc(l.Stratum)} · ${ds.length} document${ds.length===1?'':'s'} shown · ${esc(l.Result)}</span></summary><div class="docs">${ds.map(d=>docHTML(d,false)).join('')||'<p class="note">No documents match the current filters.</p>'}${l['Absences and access notes']?`<p class="note">Search notes: ${esc(l['Absences and access notes'])}</p>`:''}</div></details>`}).join('')||'<p class="note">No institutions match the current filters.</p>';
+ $('list').innerHTML=insts.map(l=>{const ds=by[uid(l.UNITID)]||[];return `<details class="card"><summary><h3>${esc(l.Institution)}</h3><span class="meta">${esc(l.Stratum)} · ${ds.length} document${ds.length===1?'':'s'} shown</span>${l.Profile?`<span class="profile">${esc(l.Profile)}</span>`:''}</summary><div class="docs">${l.Summary?`<p class="summary">${esc(l.Summary)}</p>`:''}${ds.map(d=>docHTML(d,false)).join('')||'<p class="note">No documents match the current filters.</p>'}${l['Absences and access notes']?`<details class="record"><summary>Full search record</summary><p class="note">${esc(l['Absences and access notes'])}</p></details>`:''}</div></details>`}).join('')||'<p class="note">No institutions match the current filters.</p>';
  const cs=DOCS.filter(d=>!EMPTY.test((d['Contradiction with another document']||'').trim()));
  $('contraList').innerHTML=cs.map(d=>docHTML(d,true)).join('')||'<p class="note">No contradictions recorded.</p>';
 }
