@@ -2,7 +2,7 @@
 
 A stratified census of the documents through which US colleges and universities govern artificial intelligence: policies, honor code clauses, syllabus requirements, teaching and student guidance, IT and data rules, procurement and licensing announcements, committee reports, and strategic initiatives. The sample of 334 institutions is drawn from the 2025 Carnegie Classifications.
 
-Status: version 0.5 (3 November 2026) releases the inventory for 90 institutions, the ten pilot institutions and the first eighty R1 institutions in alphabetical order (1,125 document rows). Of these, 724 rows were verified against the live document or a downloaded copy, 134 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
+Status: version 0.6 (10 November 2026) releases the inventory for 117 institutions, the ten pilot institutions and 107 R1 institutions, which run in alphabetical order through the University of California-San Diego, with NC State peer institutions searched ahead of their place in that order (1,519 document rows). Of these, 946 rows were verified against the live document or a downloaded copy, 191 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
 
 ## Contents
 
@@ -46,7 +46,7 @@ The Carnegie Public Data File is published by the American Council on Education 
 
 ## Citation
 
-Cite the archived release through its Zenodo DOI. The concept DOI https://doi.org/10.5281/zenodo.23887259 always resolves to the latest version; version 0.5 is https://doi.org/10.5281/zenodo.23926696. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
+Cite the archived release through its Zenodo DOI. The concept DOI https://doi.org/10.5281/zenodo.23887259 always resolves to the latest version; version 0.6 is https://doi.org/10.5281/zenodo.24114571. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
 
 ## License
 
