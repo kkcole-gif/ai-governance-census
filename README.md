@@ -9,10 +9,11 @@ Status: version 0.6 (10 November 2026) releases the inventory for 117 institutio
 | Path | What it holds |
 | --- | --- |
 | `data/sample_drawn_institutions.csv` | The 334 drawn institutions, with stratum, draw rule, UNITID, and Carnegie attributes |
-| `data/inventory.csv` | One row per document for every institution searched so far, all fields of the per-document record, with a Batch column (Pilot, R1 batch 1, R1 batch 2, R1 batch 3) |
+| `data/inventory.csv` | One row per document for every institution searched so far, all fields of the per-document record, with a Batch column naming the release batch |
 | `data/institution_log.csv` | One row per institution searched: search date, result, document count, recorded absences |
 | `data/pilot_inventory.csv`, `data/pilot_institution_log.csv` | The October 2026 pilot subset, kept as released |
 | `data/pilot_protocol_findings.csv` | Changes to the protocol the pilot produced, with their status |
+| `data/supplement_natural_resources_inventory.csv`, `data/supplement_natural_resources_log.csv` | Supplementary layer: forestry, environmental science, conservation biology, and natural resources units at 31 institutions (searched 4 November 2026), kept out of all census counts |
 | `scripts/build_frame.py` | Builds the sampling frame and reproduces every random draw from the 2025 Carnegie Public Data File |
 | `docs/` | Protocol and codebook (in preparation) |
 

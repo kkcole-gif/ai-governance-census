@@ -39,3 +39,9 @@ Caution: the quoted passage in Key Framing Language is a short excerpt. A quotat
 ### What does a missing institution mean?
 
 Every drawn institution appears in the institution log, including those with no qualifying document. An institution with the result "No AI governance document located" was searched under the full protocol, and its log entry lists the documents checked. Absence in the census is a recorded result of a search.
+
+### Is there a department-level layer?
+
+A supplementary file records a search of forestry, environmental science, conservation biology, and natural resources units at 31 institutions, land-grant institutions first, run on 4 November 2026. It holds 15 document rows from 12 institutions (10 verified, 2 flagged, 3 not reachable) and a search record for each of the 31 institutions, including those where no unit-level document was located. Most of the documents come from Cooperative Extension and agricultural research services. Unit-level rules appear in graduate handbooks at Colorado State University, New Mexico State University, the University of Minnesota, and Rutgers University. Download the files from the Cite and download tab: the supplementary inventory uses the same fields as the main inventory, and the supplementary log uses the fields of the institution log.
+
+Caution: the supplementary layer follows a narrower search than the census protocol, limited to the named units and their Extension services, and its rows are excluded from every count on this site. Campus-level documents found during the search that the census already holds were not recorded a second time.
