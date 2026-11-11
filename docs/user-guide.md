@@ -1,6 +1,6 @@
 # User Guide: AI Governance Census of US Colleges and Universities
 
-Revised November 2, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
+Revised November 11, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
 
 ## 1. What the census records
 
@@ -92,13 +92,21 @@ The Contradiction field deserves particular attention. Universities often state 
 
 ## 6. The specification scale
 
-Verified documents are scored on three levels of AI literacy, each rated High, Medium, or Low.
+Verified documents are scored on three levels of AI literacy.
 
 - Conceptual: how far the document describes the system itself (what AI is, how training and output relate, error properties).
 - Structural: how far it specifies conditions in place before any user arrives (training data, ownership and vendor control, license terms, retention, whether user data trains the model, labor and environmental costs).
 - Operative: how far it equips a reader to decide, in a situation, whether to act, withhold, or refuse, and to answer for the decision.
 
-A document addressed to the person who decides, with stated grounds, is eligible for High on the operative level. A document telling its reader someone else decides stays at Medium. Each scored document also records its primary and secondary addressee (Students, Instructors, Staff, Administrators and units, or Institution-wide) and, where operative is High, its grounds (Compliance, Learning, Accuracy or access, or Both). The codebook in this folder gives the full rules.
+Each level receives one of three ratings.
+
+- High: the document specifies the level's content in detail a reader is able to use.
+- Medium: the document names the level or gestures at it.
+- Low: the level is absent from the document.
+
+On the operative level, High requires a pattern, meaning at least two rules about whether to use, withhold, or refuse AI, each with a reason stated in the document's own prose. A document telling its reader someone else decides (an instructor, an approval office) stays at Medium, as does a document whose reasons appear only inside sample syllabus statements. Each scored document also records its primary and secondary addressee (Students, Instructors, Staff, Administrators and units, or Institution-wide) and its grounds (Compliance, Learning, Accuracy or access, or Both). The [codebook](https://github.com/kkcole-gif/ai-governance-census/blob/main/docs/codebook.md) gives the full rules.
+
+Scores are absent from the released data at this version. They enter the inventory in a later release, once scoring of the released batches is complete.
 
 ## 7. How to cite
 
