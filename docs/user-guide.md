@@ -1,6 +1,6 @@
 # User Guide: AI Governance Census of US Colleges and Universities
 
-Revised November 11, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
+Revised November 12, 2026. This guide explains what the dataset records, how to read it, and how to cite or correct it. A separate methods page documents the sampling frame, the search protocol, and the coding procedure.
 
 ## 1. What the census records
 
@@ -104,7 +104,7 @@ Each level receives one of three ratings.
 - Medium: the document names the level or gestures at it.
 - Low: the level is absent from the document.
 
-On the operative level, High requires a pattern, meaning at least two rules about whether to use, withhold, or refuse AI, each with a reason stated in the document's own prose. A document telling its reader someone else decides (an instructor, an approval office) stays at Medium, as does a document whose reasons appear only inside sample syllabus statements. Each scored document also records its primary and secondary addressee (Students, Instructors, Staff, Administrators and units, or Institution-wide) and its grounds (Compliance, Learning, Accuracy or access, or Both). The [codebook](https://github.com/kkcole-gif/ai-governance-census/blob/main/docs/codebook.md) gives the full rules.
+On the conceptual and structural levels, High requires at least two properties of the system, or two conditions in place before any user arrives, each explained in the document's own prose. On the operative level, High requires a pattern, meaning at least two rules about whether to use, withhold, or refuse AI, each with a reason stated in the document's own prose. A document telling its reader someone else decides (an instructor, an approval office) stays at Medium, as does a document whose reasons appear only inside sample syllabus statements. Each scored document also records its primary and secondary addressee (Students, Instructors, Staff, Administrators and units, or Institution-wide) and its grounds (Compliance, Learning, Accuracy or access, Environmental cost). The [codebook](https://github.com/kkcole-gif/ai-governance-census/blob/main/docs/codebook.md) gives the full rules.
 
 Scores are absent from the released data at this version. They enter the inventory in a later release, once scoring of the released batches is complete.
 
