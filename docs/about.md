@@ -14,6 +14,10 @@ Institutions frequently state different rules for AI use across their own docume
 
 Only rows marked Verified enter the counts on this site. Rows with other statuses (Found, Flag, Located behind login, Not reachable) remain visible so a reader sees what has been searched and what is still open. The [user guide](#guide) defines every status and every field.
 
+### How this page shows the data
+
+The census serves two audiences, and the page keeps their layers apart. A reader looking up an institution sees plain labels: each institution opens into its full record, every row appears with its status, and the counts at the top use Verified rows only. The research apparatus behind the record, the sampling strata, the wave coding, the numbered document types, and the full search records, lives in the data files, the codebook, and the user guide, where a reuser needs it. The search box answers common names (NC State, UNLV, Virginia Tech) as well as formal ones. Opening an institution puts its address in the browser bar, so a record travels as a link. Between archived releases the data on this page runs ahead of the release notes, a line under the counts says so, and the Cite tab names the last archived version.
+
 ### Where to go next
 
 The Institutions tab lists every searched institution with its documents. The Contradictions tab gathers every recorded conflict in one list. Using the data walks through common questions and the cautions each one carries. Reading the census presents the director's interpretation of the evidence, kept separate from the record itself. Cite and download gives the citation, the data files, and the license.
