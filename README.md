@@ -2,7 +2,7 @@
 
 A stratified census of the documents through which US colleges and universities govern artificial intelligence: policies, honor code clauses, syllabus requirements, teaching and student guidance, IT and data rules, procurement and licensing announcements, committee reports, and strategic initiatives. The sample of 334 institutions is drawn from the 2025 Carnegie Classifications.
 
-Status: version 0.8 (17 November 2026) releases the inventory for 157 institutions, the ten pilot institutions and 147 R1 institutions, which run in alphabetical order through the University of North Dakota, with NC State peer institutions searched ahead of their place in that order (2,102 document rows). Of these, 1,333 rows were verified against the live document or a copy downloaded locally, 240 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
+Status: version 0.9 (19 November 2026) releases the inventory for 187 institutions, the ten pilot institutions and all 177 R1 institutions in the 2025 Carnegie Classifications (2,663 document rows). Of these, 1,692 rows were verified against the live document or a copy downloaded locally, 312 record a body or policy announced without a published document, and each remaining row states why it was not verified. The full census is in progress and releases in batches. Version 1.0 will add specification-scale scores from the coding pass.
 
 ## Contents
 
@@ -47,7 +47,7 @@ The Carnegie Public Data File is published by the American Council on Education 
 
 ## Citation
 
-Cite the archived release through its Zenodo DOI. The concept DOI https://doi.org/10.5281/zenodo.23887259 always resolves to the latest version; version 0.8 is https://doi.org/10.5281/zenodo.24316966. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
+Cite the archived release through its Zenodo DOI. The concept DOI https://doi.org/10.5281/zenodo.23887259 always resolves to the latest version; version 0.9 is https://doi.org/10.5281/zenodo.24372755. `CITATION.cff` carries the current citation, and each later version receives its own DOI.
 
 ## License
 
