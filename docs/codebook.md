@@ -48,10 +48,21 @@ Only documents with the status Verified are scored. The unit is the whole docume
 - Where teaching guidance places AI misuse under an integrity code or policy, the row for that code or policy records in Notes whether its text names AI ("Names AI: yes | no").
 - Where a document states that the institution has no AI policy, or none of a named kind, the row records "No-policy statement" in Notes with the sentence.
 
-## 8. Revision history
+## 8. Supplementary unit layers
+
+Two supplementary files record searches of named academic units at the same 31 institutions, kept out of every census count and carried in the same fields as the inventory and the institution log, with the Batch field naming the unit searched. The natural resources layer (data/supplement_natural_resources_inventory.csv and _log.csv, 4 November 2026) covers forestry, environmental science, conservation biology, natural resources, and Extension units. The department layer (data/supplement_departments_inventory.csv and _log.csv, 19 to 23 November 2026) covers English, Science and Technology Studies, and Psychology, and adds three conventions:
+
+- Unit scope for STS. The STS department where one exists; otherwise the program or group carrying the field inside another department or college (a history and philosophy of science group, a science and society program, an STS minor or certificate, an AI and society minor). A document issued by the host unit counts where it governs the program's students or courses, with the host named in Issuing office and the row marked Boundary case "Yes: unit fit".
+- Referral. A unit page, handbook, or syllabus guide naming AI and pointing to campus guidance, a disciplinary society statement, or the instructor's syllabus, with no provision of its own, is recorded as a row with its own sentence quoted, Policy stance "refers to <named guidance>", and Boundary case "Yes: referral". The log Result values are "Unit documents found (n)", "Unit refers to outside guidance (n)", "Unit handbooks silent on AI (n read)", and "No unit-level AI document located".
+- Silence. A handbook or page is logged as silent only where it was read, and the log names each one with its date. Environmental forms follow section 7; rows read before the form was assessed carry "Environmental: not assessed (January 2027 sweep)".
+
+The department layer is the baseline for the CWSP unit reports on AI governance in English, Science and Technology Studies, and Psychology (CHASS Curriculum Accelerator, NC State, November 2026), and the natural resources layer for the FER AI Policy Lab workbook (December 2026). Each report names the file it draws on.
+
+## 9. Revision history
 
 - October 24, 2026: scale applied to census documents.
 - November 11, 2026: the pattern rule, the sample language rule, and the reading depth rule were stated after two independent readings of a 72-document test set agreed on the operative level in 60 cases and showed the earlier wording admitted single-rule documents to High.
 - November 12, 2026: rules for the conceptual and structural levels were stated after a second reading of the same test set (agreement 79 and 82 percent), the rule on instructors' and employees' own use was added, and environmental cost was added as a ground.
 - November 16, 2026: the heading-line count of contradictions was defined as distinct disagreements (the inventory keeps one row per document side), and every published profile and summary was revised from the record under the writing brief: facts only from the record, no dates, no process vocabulary, documents never the subject of verbs of intention, with the two-audience rule of the display stated on the About page.
 - November 19, 2026: the R1 stratum closed at 177 institutions (batches 8 and 9). The environmental form, the Names AI note, and the No-policy statement note were stated as conventions of the Notes field, and the environmental reading was completed for every document read to date, with each form written into its row.
+- November 23, 2026: the department layer (English, Science and Technology Studies, Psychology) was added as a second supplementary file on the 31 natural resources institutions, with the STS scope rule, the referral convention, and the silence rule stated in section 8.

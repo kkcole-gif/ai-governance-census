@@ -13,7 +13,8 @@ Status: version 0.9 (19 November 2026) releases the inventory for 187 institutio
 | `data/institution_log.csv` | One row per institution searched: search date, result, document count, recorded absences |
 | `data/pilot_inventory.csv`, `data/pilot_institution_log.csv` | The October 2026 pilot subset, kept as released |
 | `data/pilot_protocol_findings.csv` | Changes to the protocol the pilot produced, with their status |
-| `data/supplement_natural_resources_inventory.csv`, `data/supplement_natural_resources_log.csv` | Supplementary layer: forestry, environmental science, conservation biology, and natural resources units at 31 institutions (searched 4 November 2026), kept out of all census counts |
+| `data/supplement_natural_resources_inventory.csv`, `data/supplement_natural_resources_log.csv` | Supplementary layer: forestry, environmental science, conservation biology, and natural resources units at 31 institutions (searched 4 November 2026), kept out of all census counts. Companion to the department layer below |
+| `data/supplement_departments_inventory.csv`, `data/supplement_departments_log.csv` | Supplementary layer: English, Science and Technology Studies, and Psychology units at the same 31 institutions (searched 19 to 23 November 2026), kept out of all census counts. Companion to the natural resources layer above; baseline for the CWSP unit reports prepared for the CHASS Curriculum Accelerator |
 | `scripts/build_frame.py` | Builds the sampling frame and reproduces every random draw from the 2025 Carnegie Public Data File |
 | `docs/` | Protocol and codebook (in preparation) |
 
